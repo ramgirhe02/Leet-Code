@@ -3,7 +3,7 @@ class Solution {
         String []  ss =  text.split(" ");
         ArrayList<String> list = new ArrayList<>();
 
-        int count = 0;
+        // int count = 0;
         for(int i = 2 ;i<ss.length;i++){
             if(ss[i-2].equals(first) && ss[i-1].equals(second))
                 list.add(ss[i]);
