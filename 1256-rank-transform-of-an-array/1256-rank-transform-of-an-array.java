@@ -3,7 +3,7 @@ class Solution {
         int arrr[] = arr.clone();
         Arrays.sort(arrr);
         int count = 0;
-        Map<Integer,Integer> map = new TreeMap<>();
+        Map<Integer,Integer> map = new HashMap<>();
         for(int i = 0 ; i<arrr.length;i++){
             if(!map.containsKey​(arrr[i]))
                 map.put(arrr[i],count++);
@@ -12,6 +12,7 @@ class Solution {
             arr[j]=map.get(arr[j])+1;
         }
         return arr;
+
         // List<Integer> list = new ArrayList<>();
         // for(int i = 0 ; i<arr.length;i++){
         //     if(!list.contains​(arr[i]))
