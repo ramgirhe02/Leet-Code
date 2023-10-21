@@ -4,7 +4,7 @@ class Solution {
         for(List<String> path : paths){
             set.add(path.get(0));
         }
-        System.out.println(set);
+        //System.out.println(set);
         for(List<String> path : paths){
             if(!set.contains(path.get(1))){
                 return path.get(1);
