@@ -4,14 +4,17 @@ class Solution {
         for(int i = 1 ; i<nums.length ;i ++){
             // if(nums[i-1]<nums[i])continue;
             // else{
-                while(!(nums[i-1]<nums[i])){
-                    nums[i]++;
-                    count++;
+                if(!(nums[i-1]<nums[i])){
+                    count+=(nums[i-1]-nums[i])+1;
+                    nums[i]=nums[i-1]+1;
+                }
+                // while(!(nums[i-1]<nums[i])){
+                //     nums[i]++;
+                //     count++;
                 // }
-            }
+            // }
 
         }
-        System.gc();
         return count;
     }
 }
