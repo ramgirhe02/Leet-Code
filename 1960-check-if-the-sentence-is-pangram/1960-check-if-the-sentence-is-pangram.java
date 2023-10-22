@@ -4,6 +4,7 @@ class Solution {
             if(sentence.indexOf(i)<0)
                 return false;
         }
+        System.gc();
         return true;
     }
 }
