@@ -5,8 +5,10 @@ class Solution {
             tree.put(heights[i],names[i]);
         }
         int count=0;
-        for(Map.Entry<Integer,String>map : tree.entrySet()){
-            names[count++]=map.getValue();
+        // for(Map.Entry<Integer,String>map : tree.entrySet()){
+            for(String values : tree.values()){
+            // names[count++]=map.getValue();
+            names[count++]=values;
         }
         return names;
     }
