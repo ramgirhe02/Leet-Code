@@ -6,6 +6,7 @@ class Solution {
                 sum= sum+(nums[i-1]*nums[i-1]);
             }
         }
+        System.gc();
         return sum;
     }
 }
