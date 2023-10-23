@@ -7,12 +7,12 @@ class Solution {
                     list.add(Integer.parseInt(sb.charAt(j)+""));
                 }
             }
-        nums = new int [list.size()];
+        int [] arr = new int [list.size()];
         for(int i=0;i<list.size();i++){
-            nums[i] = list.get(i);
+            arr[i] = list.get(i);
         }
         // System.out.println(list);
-        return nums;
+        return arr;
     }
     
 }
