@@ -5,11 +5,11 @@
 var compose = function(functions) {
     
 	return function(x) {
-        if (!functions.length) { return x }
-        for(var i = functions.length-1;i>=0;i--){
-            x = functions[i](x);
+       if (!functions.length) { return x }
+        for (let index = functions.length - 1; index >= 0; index--) {
+            x = functions[index](x)
         }
-        return x;
+        return x
         
     }
 };
